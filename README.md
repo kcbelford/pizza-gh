@@ -1,24 +1,11 @@
-# assignment-7
+# Pizza
 
-## Project setup
-```
-npm install
-```
+Any pizza lover will appreciate this site. It includes a brief history of pizza, an overview of different styles of pizza and a list of some of the best pizzerias in the USA.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### View the Site
 
-### Compiles and minifies for production
-```
-npm run build
-```
+https://piz-za.netlify.app/
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Technologies Used
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+HTML, CSS, Javascript, Bootstrap, Node.js, Vue.js, VueRouter
