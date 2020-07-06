@@ -1,17 +1,26 @@
 <template lang="html">
   <div class="header">
-    <router-link to="/" class="text-decoration-none">
-    <h1 class="text-center display-2 text-uppercase pizza-h1">Pizza</h1>
-    <h2 class="text-center display-4 text-dark pizza-h2">piz·za</h2>
-    <h3 class="text-center display-5 text-secondary">/ˈpētsə/</h3>
-    </router-link>
+    <a @click="scroll" class="text-decoration-none pizza-header">
+      <h1 class="text-center display-2 text-uppercase pizza-h1">Pizza</h1>
+      <h2 class="text-center display-4 text-dark pizza-h2">piz·za</h2>
+      <h3 class="text-center display-5 text-secondary">/ˈpētsə/</h3>
+    </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+
+  methods: {
+      scroll: function() {
+        const element = document.getElementById('nav');
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
 }
+
+
 </script>
 
 <style lang="css" scoped>
@@ -30,5 +39,9 @@ h1 {
 
 .pizza-h2 {
   padding-bottom: 1.25rem;
+}
+
+.pizza-header {
+  cursor: pointer;
 }
 </style>
